@@ -9,3 +9,25 @@ If a customer purchases 8 or more books, they earn 60 points.
 Write a program that asks the user to enter the number of books that they have purchased this month and then display the number of points awarded.
 
 """
+
+def points(books):
+
+    if books <= 1:
+        return 0
+    elif books <= 3:
+        return 5
+    elif books <= 5:
+        return 15
+    elif books <= 7:
+        return 30
+    elif books >= 8:
+        return 60
+    
+
+def main():
+    books = int(input("Enter the number of books you purchased this month:\n"))
+    print(f"\nYou have earned {points(books)} points because you purchased {books} books this month.")
+
+
+if __name__ == "__main__":
+    main()
