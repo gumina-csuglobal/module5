@@ -10,6 +10,9 @@ Write a program that asks the user to enter the number of books that they have p
 
 """
 
+"""
+Return the number of points given the number of books purchased
+"""
 def points(books):
 
     if books <= 1:
